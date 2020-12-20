@@ -1,0 +1,6 @@
+<% @coupons.each do | coupon | %>
+  <tr>
+    <td><%= coupon.store %></td>
+    <td><%= link_to coupon.coupon_code, coupon_path(coupon) %></td>
+  </tr>
+<% end %>
